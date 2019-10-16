@@ -4,11 +4,11 @@ class UI {
     let output = '';
     faculty.forEach(current => {
       output += `
-         <div class=" row container justify-content-center">
-     <div class="  col-md-6 card mt-3 text-light  bg-info">
+         <div class=" row mx-auto container justify-content-center">
+     <div class="  col-sm-6 card mt-3 text-light bg-info">
       <div class="card-body ml-3">
-      <div class="d-flex justify-content-center">
-      <h1><span class=""> ${current.name}</span>  </h1>
+      <div class="d-flex justify-content-center align-items-center">
+      <h1 class="text-center" ><span> ${current.name}</span></h1>
       </div>        
         <p class="lead"> <i class="fas fa-user-tie btn btn-light mr-2 btn-lg rounded-circle "></i>${current.Designation}</p>
         <p class="lead"> <i class="fas fa-user-graduate btn btn-light  mr-2 btn-lg rounded-circle "></i> ${current.Qualification}</p>
@@ -26,7 +26,7 @@ class UI {
 
   showSingleFaculty(current) {
     document.getElementById('output').innerHTML = `
-    <div class="row container justify-content-center">
+    <div class="row mx-auto container justify-content-center align-items-center">
             <div class=" col-sm-6 card mt-3 text-light  bg-info">
              <div class="card-body ml-3">
              <div class="d-flex justify-content-center">
@@ -93,7 +93,7 @@ class UI {
   showUpdateFaculty() {
     document.getElementById('output').innerHTML =
       `
-    <div class="row container justify-content-center ">
+    <div class="row container mx-auto searchheight align-items-center justify-content-center ">
     <div class="col-sm-5 bg-info p-4 rounded text-light">
     <div id="alert"></div>
       <p class="lead text-center">Enter Id of Faculty</p>
@@ -112,7 +112,7 @@ class UI {
 
     document.getElementById('output').innerHTML =
       `
-    <div class="row container  justify-content-center ">
+    <div class="row container mx-auto searchheight align-items-center   justify-content-center ">
     <div class="col-sm-5  bg-info p-4 rounded text-light">
     <div id="alert"></div>
       <p class="lead text-center">Enter Id of Faculty</p>
@@ -149,7 +149,7 @@ class UI {
 
   showRemoveFaculty() {
     document.getElementById('output').innerHTML = `
-    <div class="row container justify-content-center ">
+    <div class="row container mx-auto searchheight align-items-center  justify-content-center ">
     <div class="col-sm-5 bg-info p-4 rounded text-light">
     <div id="alert"></div>
       <p class="lead text-center">Enter Id of Faculty</p>
